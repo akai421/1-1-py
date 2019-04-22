@@ -1,0 +1,27 @@
+//声明
+Declare class_num,stu_num,count1,count2 as integer
+Declare class_name as string
+Declare ach_num1,ach_num2,sum as float
+Write"请输入班级个数"
+Input class_num
+//成绩计算及输出
+For(count1=0,count1<class_num,count1++)
+    Write"请输入班级名"
+    Input class_name
+    Set sum=0
+//错误检测
+    While ture
+        Write"请输入学生人数"
+        Input stu_num
+        If 0<stu_num<=50 Then
+            Break
+        End if
+        Write "您输入了一个错误数据，请重新输入"
+    For(count2=0,count2<stu_num,count2++)
+        Write"请输入学生成绩"
+        Input ach1_num
+        Set sum=sum+ach_num1
+    End for
+    Set ach_num2=ach_num1/stu_num
+    Write class_name+"的平均成绩为"+ach_num2
+End for

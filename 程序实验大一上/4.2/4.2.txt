@@ -1,0 +1,31 @@
+//声明
+Declare str1,str2,str3 as string
+Declare a as integer
+//输入
+Write"请输入字符串(一)"
+input str1
+Write"请输入字符串(二)"
+Input str2
+//根据用户需要，进行操作
+While 1
+    Write"请根据您的需求进行选择：比较，请按 1；追加，请按 2；拷贝，请按 3；结束进程，请按 0"
+    Input a
+    If a>0 Then
+        Break
+    Select Case Of a
+         Case 1:
+                If str1>str2 Then
+                     Writer"str1比str2大"
+                Else
+                    If str1==str2 Then
+                        Wrier "str1和str2一样大"
+                    Else
+                        Wrter"str2比str1大"
+                Break
+         Case 2:
+                Set str3=str1+str2
+                Write"结果为"+str3
+         Case 3:
+                str1=str2
+                Write"结果为"+str1
+                    

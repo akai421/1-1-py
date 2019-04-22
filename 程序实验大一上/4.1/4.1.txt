@@ -1,0 +1,23 @@
+//声明
+Declare eng[30],up60[30],up90[30] as float
+Declare k,s,t as integer
+//输入
+For(k=0,k<30,k++)
+    Write"请输入学生成绩"
+    Input eng[k]
+//初始化
+Set s=0
+Set t=0
+//筛选
+For(k=0,k<30,k++)
+    If eng[k]>60 Then
+        Set up60[s]=eng[k]
+        Set s=s+1
+    If eng[k]>90 Then
+        Set up90[t]=eng[k]
+        Set t=t+1
+//输出
+Write "60分以上的人数为:"+s
+Input up60[30]
+Write "90分以上的人数为:"+t
+Input up90[30]

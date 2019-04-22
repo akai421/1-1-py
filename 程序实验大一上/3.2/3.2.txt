@@ -1,0 +1,16 @@
+Declare rows,a,count,i as integer
+Write "请输入你想要的列数"
+While ture
+    Input rows
+    If rows>0 Then 
+        break
+    Else
+        Write"请输入一个正数"
+    End if
+If rows%2==0 Then
+   Set rows=rows-1
+Set a=(rows+1)/2
+Set i=1
+For(count=0,count<a,count++)
+    Write(" "*(rows-i)+"*"*(2*i+1))
+    Set i=i+1
